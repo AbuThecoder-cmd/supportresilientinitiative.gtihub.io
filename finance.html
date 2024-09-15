@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Application Form - Support Resilient Initiative</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="loan">
+    <h2>Loan Application Form</h2>
+    <form id="loanForm">
+      <!-- Personal Information Section -->
+      <h3>Personal Information</h3>
+      <label for="fullName">Full Name</label><br>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br>
+
+      <label for="nationalId">National ID Number</label><br>
+      <input type="text" id="nationalId" name="nationalId" placeholder="Enter your national ID number" required><br>
+
+      <label for="age">Date of Birth</label><br>
+      <input type="date" id="dob" name="dob" required><br>
+
+      <label for="occupation">Occupation</label><br>
+      <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation" required><br>
+
+      <label for="contact">Contact Information</label><br>
+      <input type="text" id="contact" name="contact" placeholder="Enter your phone number" required><br>
+
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+
+      <!-- Loan Information Section -->
+      <h3>Loan Details</h3>
+      <label for="loanAmount">Loan Amount</label><br>
+      <input type="number" id="loanAmount" name="loanAmount" placeholder="Enter loan amount" required><br>
+
+      <label for="loanPurpose">Purpose of Loan</label><br>
+      <textarea id="loanPurpose" name="loanPurpose" rows="3" placeholder="Describe the purpose of the loan" required></textarea><br>
+
+      <label for="repaymentPeriod">Repayment Period (in months)</label><br>
+      <input type="number" id="repaymentPeriod" name="repaymentPeriod" required><br>
+
+      <!-- Security/Collateral Section -->
+      <h3>Security/Collateral</h3>
+      <label for="collateral">Security Asset Description</label><br>
+      <textarea id="collateral" name="collateral" rows="3" placeholder="Describe the asset as collateral" required></textarea><br>
+
+      <label for="assetImage">Upload Asset Image</label><br>
+      <input type="file" id="assetImage" name="assetImage" accept="image/*" required><br>
+
+      <!-- Image Preview -->
+      <div class="image-preview">
+        <h4>Image Preview:</h4>
+        <img id="imagePreview" src="" alt="Your image will appear here" style="max-width: 100%; height: auto;">
+      </div>
+
+      <!-- Guarantor Information Section -->
+      <h3>Guarantor Information</h3>
+      <label for="guarantorName">Guarantor Name</label>
+      <input type="text" id="guarantorName" name="guarantorName" placeholder="Enter guarantor name" required>
+
+      <label for="guarantorContact">Guarantor Contact</label>
+      <input type="text" id="guarantorContact" name="guarantorContact" placeholder="Enter guarantor phone number" required>
+
+      <!-- Agreement Section -->
+      <div class="agreement">
+        <input type="checkbox" id="agreement" required>
+        <label for="agreement">I agree to the terms and conditions of the loan application.</label>
+      </div>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <a href="index.html">Home</a>
+
+</body>
+</html>
